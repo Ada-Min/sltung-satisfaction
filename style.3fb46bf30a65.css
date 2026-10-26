@@ -50,3 +50,4 @@ fieldset{scroll-margin-top:100px}
 
 #receipt-image{-webkit-touch-callout:default;-webkit-user-select:auto;user-select:auto;touch-action:auto}#open-receipt{margin:8px}#save-status:empty{display:none}
 .mobile-line #open-receipt,.mobile-line #save-status,.mobile-line #receipt-save-help{display:none!important}
+#line-save-hint{display:none}.mobile-line #line-save-hint{display:block;font-size:1.4rem;font-weight:700;line-height:1.6;margin:20px 0;color:#243b38}
