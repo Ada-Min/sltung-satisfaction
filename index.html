@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="referrer" content="no-referrer"><meta name="theme-color" content="#0c816a"><title>就醫經驗與滿意度調查｜童綜合醫院</title><link rel="stylesheet" href="style.223f44cf023a.css"><script src="config.js"></script><script defer src="app.f29277c20962.js"></script></head>
+<body>
+<a class="skip" href="#questionnaire">跳至問卷</a>
+<div class="header-band"><header><div class="brand"><img src="logo.jpg" alt="童綜合醫院" width="300"><span>用心聆聽・持續改善</span></div>
+<button id="staff-open" class="icon-button" aria-label="工作人員專用" title="工作人員專用"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 8V3h5m8 0h5v5M3 16v5h5m8 0h5v-5"/><path d="M7 7h3v3H7zm7 0h3v3h-3zM7 14h3v3H7zm7 0h1v1h-1zm3 3h1v1h-1z"/></svg></button></header></div>
+<main>
+<div id="demo-banner" class="notice" hidden>操作展示版｜資料只留在本機，序號不能兌獎。請使用虛構資料試填。</div>
+<section class="intro"><h1>您的感受，<br class="mobile-break">讓照護更好。</h1><p>感謝您分享這次的就醫經驗。請選擇就醫類別，填寫問卷。</p></section>
+<nav id="tabs" aria-label="選擇就醫類別"></nav>
+<div id="notice" class="notice" role="status" aria-live="polite" hidden></div>
+
+<section id="survey-area" hidden><progress id="progress" value="0" max="100" aria-label="必填完成比例"></progress><form id="questionnaire" novalidate><div id="fields"></div><div class="trap" aria-hidden="true"><label>網站<input id="website" tabindex="-1" autocomplete="off"></label></div><div class="actions"><button type="submit" id="submit">送出問卷</button><button type="button" id="clear" class="secondary">清除草稿</button></div><p class="muted">送出後可取得一組紀念品序號。每份成功提交的問卷皆可領取一次；領取方式請洽現場服務人員。</p></form></section>
+<section id="receipt-area" class="card" hidden tabindex="-1"><p class="eyebrow">THANK YOU</p><h2>謝謝您，讓我們做得更好。</h2><p id="receipt-label"></p><img id="receipt-image" alt="紀念品領取憑證，含序號與QR Code"><p>請保存此憑證，領取時向工作人員出示。每張憑證限核銷一次。</p><p id="gift-info"></p><a id="download" class="button" download="紀念品領取憑證.png">儲存憑證圖片</a><p class="muted">若無法下載，可長按上方圖片儲存，或擷取畫面。</p><button id="new-form" class="secondary">填寫新一份</button></section>
+<footer><span id="build-label"></span></footer>
+</main>
+<dialog id="staff-dialog" aria-labelledby="staff-title"><div class="dialog-head"><h2 id="staff-title">工作人員專用</h2><button id="staff-close" class="icon-button" aria-label="關閉">✕</button></div>
+<form id="login-form"><input id="password" aria-label="密碼" type="password" autocomplete="current-password" required><button>登入</button></form>
+<div id="staff-tools" hidden><div class="actions"><button id="scan">開啟掃描器</button><button id="stop-scan" class="secondary">停止相機</button><button id="logout" class="text-button">登出</button></div><video id="camera" playsinline muted hidden></video><label class="upload">或選擇QR圖片<input id="qr-file" type="file" accept="image/*"></label>
+<form id="manual-form"><div class="manual-grid"><label>年度<input id="redeem-year" type="number" min="2020" max="2100" required></label><label>類別<select id="redeem-type"><option>門診</option><option>急診</option><option>住院</option></select></label><label>流水號<input id="redeem-number" inputmode="numeric" pattern="[0-9]{1,4}" maxlength="4" placeholder="0001" required></label></div><button>核銷</button><button type="button" id="lookup" class="secondary">查看明細</button></form>
+<details id="details-box"><summary>核銷明細</summary><div id="staff-details"></div></details><section id="review-tools" hidden><h3>品管查詢</h3><label>案件ID<input id="review-id" autocomplete="off"></label><button id="review-lookup" class="secondary">查詢問卷與分析</button><button id="health" class="secondary">運作狀態</button></section></div>
+<p id="staff-status" hidden role="status" aria-live="polite"></p></dialog>
+</body></html>
