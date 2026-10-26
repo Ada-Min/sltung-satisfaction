@@ -45,3 +45,5 @@ fieldset{scroll-margin-top:100px}
 .floor-options .option{background:#ffffffcf;min-width:0}
 @media(max-width:600px){.floor-options{grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}.floor-options .option{padding:12px 8px}}
 @media(max-width:360px){.floor-options{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
+.gift-table-scroll{overflow-x:auto;max-width:100%}.gift-table-scroll table{border-collapse:collapse;width:100%;font-size:14px}.gift-table-scroll th,.gift-table-scroll td{padding:10px;border-bottom:1px solid #dce6e2;text-align:left;white-space:nowrap}.gift-table-scroll th{background:#edf6f2}
