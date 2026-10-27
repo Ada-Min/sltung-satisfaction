@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="zh-Hant">
-<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="referrer" content="no-referrer"><meta name="theme-color" content="#0c816a"><title>就醫經驗與滿意度調查｜童綜合醫院</title><link rel="stylesheet" href="style.75c941bcf62f.css"><script src="config.js"></script><script defer src="app.4757cab30d49.js"></script></head>
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="referrer" content="no-referrer"><meta name="theme-color" content="#0c816a"><title>就醫經驗與滿意度調查｜童綜合醫院</title><link rel="stylesheet" href="style.806bfff708a8.css"><script src="config.js"></script><script defer src="app.6568e7bcb80a.js"></script></head>
 <body>
 <a class="skip" href="#questionnaire">跳至問卷</a>
 <div class="header-band"><header><div class="brand"><img src="logo.jpg" alt="童綜合醫院" width="300"><span>用心聆聽・持續改善</span></div>
@@ -21,4 +21,4 @@
 <form id="manual-form"><div class="manual-grid"><label>年度<input id="redeem-year" type="number" min="2020" max="2100" required></label><label>類別<select id="redeem-type"><option>門診</option><option>急診</option><option>住院</option></select></label><label>流水號<input id="redeem-number" inputmode="numeric" pattern="[0-9]{1,4}" maxlength="4" placeholder="0001" required></label></div><button>核銷</button><button type="button" id="lookup" class="secondary">查看明細</button></form>
 <details id="details-box"><summary>核銷明細</summary><div id="staff-details"></div></details><section id="review-tools" hidden><h3>紀念品發放狀況</h3><div class="manual-grid"><label>年度<input id="gift-year" type="number" min="2020" max="2100"></label><label>類別<select id="gift-type"><option>門診</option><option>急診</option><option>住院</option></select></label></div><button id="gift-refresh" type="button">查詢／重新整理</button><p id="gift-summary" role="status"></p><div class="gift-table-scroll"><table><thead><tr><th>領獎序號</th><th>類別</th><th>填答時間</th><th>發放狀態</th><th>核銷時間</th></tr></thead><tbody id="gift-rows"></tbody></table></div><button id="gift-more" type="button" hidden>載入較早紀錄</button></section></div>
 <p id="staff-status" hidden role="status" aria-live="polite"></p></dialog>
-</body></html>
+<dialog id="redeem-result" aria-labelledby="redeem-result-title"><h2 id="redeem-result-title"></h2><div class="redeem-result-actions"><button id="redeem-result-ok" type="button" autofocus>ok</button></div></dialog></body></html>
