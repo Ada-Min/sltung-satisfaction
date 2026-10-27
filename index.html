@@ -1,10 +1,10 @@
 <!doctype html>
 <html lang="zh-Hant">
-<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="referrer" content="no-referrer"><meta name="theme-color" content="#0c816a"><title>就醫經驗與滿意度調查｜童綜合醫院</title><link rel="stylesheet" href="style.04fcb6c36e02.css"><script src="config.js"></script><script defer src="app.7c9af954c322.js"></script></head>
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="referrer" content="no-referrer"><meta name="theme-color" content="#0c816a"><title>就醫經驗與滿意度調查｜童綜合醫院</title><link rel="stylesheet" href="style.87053bf498dc.css"><script src="config.js"></script><script defer src="app.966434c8053e.js"></script></head>
 <body>
 <a class="skip" href="#questionnaire">跳至問卷</a>
 <div class="header-band"><header><div class="brand"><img src="logo.jpg" alt="童綜合醫院" width="300"><span>用心聆聽・持續改善</span></div>
-<button id="staff-open" class="icon-button" aria-label="工作人員專用" title="工作人員專用"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 8V3h5m8 0h5v5M3 16v5h5m8 0h5v-5"/><path d="M7 7h3v3H7zm7 0h3v3h-3zM7 14h3v3H7zm7 0h1v1h-1zm3 3h1v1h-1z"/></svg></button></header></div>
+<div class="header-tools"><button id="staff-open" class="icon-button" aria-label="工作人員專用" title="工作人員專用"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 8V3h5m8 0h5v5M3 16v5h5m8 0h5v-5"/><path d="M7 7h3v3H7zm7 0h3v3h-3zM7 14h3v3H7zm7 0h1v1h-1zm3 3h1v1h-1z"/></svg></button><button id="print-open" type="button" class="icon-button" aria-label="列印空白問卷" title="列印空白問卷"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M6 9V3h12v6M6 17H3V9h18v8h-3M6 14h12v7H6z"/><circle cx="18" cy="11" r=".6"/></svg></button></div></header></div>
 <main>
 <div id="demo-banner" class="notice" hidden>操作展示版｜資料只留在本機，序號不能兌獎。請使用虛構資料試填。</div>
 <section class="intro"><h1>您的感受，<br class="mobile-break">讓照護更好。</h1><p>感謝您分享這次的就醫經驗。請選擇就醫類別，填寫問卷。</p></section>
@@ -15,6 +15,7 @@
 <section id="receipt-area" class="card" hidden tabindex="-1"><h2>謝謝您，讓我們做得更好。</h2><img id="receipt-image" alt="紀念品領取憑證，含序號與QR Code"><a id="download" class="button" download="紀念品領取憑證.png">儲存／分享憑證圖片</a><p id="line-save-hint">使用Line填寫者可直接截圖保存。</p><a id="open-receipt" class="button secondary" target="_blank" rel="noopener">另開憑證圖片</a><p id="save-status" role="status" class="muted"></p><p id="receipt-save-help" class="muted">手機可從分享選單選擇儲存影像或檔案；也可另開圖片或直接截圖保存。</p><button id="new-form" class="secondary">填寫新一份</button></section>
 <footer><span id="build-label"></span></footer>
 </main>
+<dialog id="print-dialog" aria-labelledby="print-title"><div class="dialog-head"><h2 id="print-title">選擇列印問卷</h2><button id="print-close" class="icon-button" aria-label="關閉">✕</button></div><div class="actions"><button data-print-type="門診" disabled>門診</button><button data-print-type="急診" disabled>急診</button><button data-print-type="住院" disabled>住院</button></div><p id="print-status" role="status">準備列印內容…</p></dialog>
 <dialog id="staff-dialog" aria-labelledby="staff-title"><div class="dialog-head"><h2 id="staff-title">工作人員專用</h2><button id="staff-close" class="icon-button" aria-label="關閉">✕</button></div>
 <form id="login-form"><input id="password" aria-label="密碼" type="password" autocomplete="current-password" required><button>登入</button></form>
 <div id="staff-tools" hidden><div class="actions"><button id="scan">開啟掃描器</button><button id="stop-scan" class="secondary">停止相機</button><button id="logout" class="text-button">登出</button></div><video id="camera" playsinline muted hidden></video><label class="upload">或選擇QR圖片<input id="qr-file" type="file" accept="image/*"></label>
